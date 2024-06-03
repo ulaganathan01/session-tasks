@@ -1,0 +1,38 @@
+Objects in JavaScript:
+    Object is a Non-Primitive data type in JavaScript.
+    Objects in JavaScript are collection of key-value pairs. Where a key is a string and a value is any data type we can difine like strings, numbers, boolean, array or we can define another object also as it's value.
+
+    We can define an object by using object constructor.
+
+        const obj = new Object();
+    
+    Also by using object literal
+        const obj = {
+            firstName: "Akshay",
+            lastName: "Kumar",
+            fullName: function(){
+                console.log(this.firstName + " " + this.lastName);
+            }
+        };
+
+        
+    Inside objects the values (key-value pairs) are called properties and it's values, and the function inside objects often called as method.
+    We can access the object through dot operator like for properties obj.firstName for methods obj.fullName(). And also by using square brackets like we're accessing arrays we can access objcts PROPERTIES like obj["firstName"].
+
+    //Accessing object properties
+    // obj.firstName  // obj["firstName"]
+
+    //Accession object method
+    // obj.fullName()
+
+    Objects are called by reference, which means when you assign an object to a variable, the variable is actually assigned a reference to that object. This means that if you try to change the object value through one variable, that change will be reflected in all other variables that reference the same object.
+
+        const obj1 = {
+            name: "Kumar"
+        };
+
+        const obj2 = obj1;
+
+        obj1.name = "Akshay";
+
+        console.log(obj2.name); // "Akshay"

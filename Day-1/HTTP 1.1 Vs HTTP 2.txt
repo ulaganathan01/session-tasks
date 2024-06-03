@@ -1,0 +1,26 @@
+What is HTTP?:
+    HTTP is a protocol / standard that enables the transfer of data over the internet, allowing users to access websites and other online resources. It is a fundamental part of World Wide Web and It follows a client-server model, where the client (usually a web browser) sends an HTTP request to the server, and the server responds with the requested resource, such as a HTML documents, images, videos or any other type of data. HTTP is a stateless protocol, which means once the response is sent to the requested client, the server doesn't retain any information (state) about that request.
+
+HTTP/1.1 Vs HTTP/2.0:
+    The earlier version of HTTP/0.9 consisted only single line requests and "GET" is the only possible method. There were no headers in the first version. Only the HTML files could be transmitted. There were no status codes or error codes. 
+
+    But, in the later verions, versioning information wes sent within each request. And each responce sent with a status code of that particular request. The HTTP headers were included for both request and response. And documents other than plain HTML files could also be trasnmitted in the later versions.
+
+Here, we can see the differences between two major versions of HTTP/1.1 and HTTP/2.0:
+    HTTP/1.1:
+        1. The first standardized version of HTTP is HTTP/1.1. We need to open a new connection for each request-response pair in HTTP/1.0. But, in HTTP/1.1 we can sent multiple requests and responses over a single connection.
+        2. HTTP/1.1 supports pipelining which makes a client can sent multiple requests without waiting for the corresponding response to the previous requests.
+        3. HTTP/1.1 introduced to transfer data in chunks where the server can transfer the data in a series of chunks and the client can process the received data without waiting for the entire transmission is complete.
+        4. HTTP/1.1 introduced several new headers to provide more control and information about requests and responses.
+        5. We can specify the domain name of the server in the header, which is allowing multiple domains to be hosted in a single IP address.
+        6. Additional cache control mechanisms were introduced in HTTP/1.1. It reduces the redundant data transfer and improving the load times for the frequent accessed resources.
+        7. The content negotiation feature allows the clints and servers can negotiate to get the best representation of resource based on client capabilities and preferences.
+    HTTP/1.1 also had it's limitations, such as head-of-line blocking, where a single slow request could delay all subsequent requests on the same connection.These limitations eventually led to the development of HTTP/2.0, which addressed many of these issues with features like multiplexing.
+
+    HTTP/2.0:
+        This is a second major version of HyperText Transfer protocol after HTTP/1.1. It was designed to address the limitations of HTTP/1.1. It improves the performance and efficiency between client-server communication.
+        1. HTTP/2 allows multiple requests and responses to be transfer simultaneously over a single connection. This process is called multiplexing and it reduces the latency and improves page load times. It allows a client can request multiple resources concurrently without blocking or waiting for the response from server for the previous request.
+        2. HTTP/2.0 uses the HPACK compression, which is used to reduce the repititive HTTP headers.
+        3. HTTP/2.0 used to tranfer data in a binary format unlike HTTP/1.1, which uses a text-based format.
+        4. This protocol introduces the prioritization technique, which allows client and server to prioritize the resources. This makes to choose which resouce to be loaded at first like the main content of the web page could be loaded firse over the least important ads or images.
+        5. HTTP/2.0 intoduces the concept of server push, where the server can tranfer additional resources to the client before they are explicitly requested.
