@@ -1,0 +1,23 @@
+Window Vs Document object:
+
+The window and document objects are essential for working with JavaScript in the browser. By using window object we can access the browser's functionality through it's properties and methods and by using document object we can manipulate the HTML content of a webpage in a DOM tree.
+
+The window object in JavaScript is the global object. It represents the browser window and provides access to the browser's functionality, such as,
+    The browser's history, The browser's location, The browser's screen, and The browser's cookies.
+    Since, window is a global object in the browser window we can access it's properties and methods by using dot opeartor like we're using in javascript accessing the javascript objects.
+        // window.history
+        // window.alert()
+    or just by defining window properties in the global space of the browser window.
+        // history
+        // alert()
+
+The window object also provides access to it's own property called document. It represents the HTML document loaded in the browser window and provides access to the document's content, such as,
+    The document's title, The document's URL, The document's body, and The document's elements.
+
+    The document is the root node of a HTML document. The document object returns a whole HTML content of a single webpage.
+    By using document object's properties or methods we can able to access the single HTML element.
+    We can define the property or method of a document by using the dot operator much like accessing the javascript objects.
+        (e.g: 1) // document.getElementById("#id") // This will return the single HTML element containg the specific id.
+        (e.g: 2) // document.querySelector("h1") // This will return all the h1 elements
+    
+The understanding of window and document object is crucial for web developers to understand the BOM (Browser Object Model) and DOM(Document Object model). It helps us to access many more functionalities of a web browser gives us.
