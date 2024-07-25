@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.header-container{
+    background-color: darkslategray;
+    display: flex;
+    color: whitesmoke;
+    padding: 10px;
+}
+.logo{
+    font-size: 40px;
+    align-self: center;
+}
+.heading{
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.body-container{
+    display: flex;
+    margin-top: 30px;
+}
+.side-bar{
+    width: 30%;
+}
+.side-card{
+    width: 90%;
+    height: 80vh;
+    margin-left: 30px;
+    background-color: darkslategray;
+    border-radius: 10px;
+}
+.main{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search{
+    width: 70%;
+}
+.search-bar{
+    width: 95%;
+    height: 2rem;
+    background-color: darkslategray;
+    font-size: 1.5rem;
+    border-style: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 3px 6px;
+    color: whitesmoke;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.card-1, .card-2, .card-3{
+    width: 25%;
+    height: 25vh;
+    margin-top: 12vh;
+    background-color: darkslategray;
+    border-radius: 10px;
+}
+.max-card{
+    width: 90%;
+    height: 25vh;
+    margin-top: 12vh;
+    background-color: darkslategray;
+    border-radius: 10px;
+}
+@media screen and (max-width: 750px){
+    .body-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .side-bar{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .side-card{
+        margin: 0;
+        height: 60vh;
+        display: inline-block;
+    }
+    .main{
+        width: 100%;
+    }
+    .search-bar{
+        width: 100%;
+    }
+    .search{
+        width: 90%;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-1, .card-2, .card-3{
+        width: 90%;
+        margin-top: 10px;
+    }
+    .max-card{
+        margin-top: 10px;
+        height: 50vh;
+    }
+}
