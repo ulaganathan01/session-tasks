@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="name">
+          <label for="name">Name<span class="required">*</span> </label>
+          <div class="name-container">
+            <div class="first-name">
+              <input type="text" name="first-name" id="name" required />
+              <p class="sub-text">First</p>
+            </div>
+            <div class="last-name">
+              <input type="text" name="last-name" id="name" required />
+              <p class="sub-text">Last</p>
+            </div>
+          </div>
+        </div>
+        <div class="email">
+          <label for="email">Email<span class="required">*</span> </label><br />
+          <input
+            class="input-email"
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+        </div>
+        <div class="experience">
+          <label for="experience">Your Experience<span class="required">*</span></label
+          ><br />
+          <input class="star" type="checkbox" checked />
+          <input class="star" type="checkbox" checked />
+          <input class="star" type="checkbox" checked />
+          <input class="star" type="checkbox" checked />
+          <input class="star" type="checkbox" checked />
+		  <p class="rating-q">overall, how would you rate your experience with us?</p>
+        </div>
+		<div class="check-container">
+			<h4 class="check-header">How satisfied are you with<span class="required">*</span></h4>
+			<table>
+				<tr>
+					<th></th>
+					<th>Very Unsatisfied</th>
+					<th>Unsatisfied</th>
+					<th>Neutral</th>
+					<th>Satisfied</th>
+					<th>Very Satisfied</th>
+				</tr>
+				<tr>
+					<td>Purchase</td>
+					<td><input type="radio" name="purchase"></td>
+					<td><input type="radio" name="purchase"></td>
+					<td><input type="radio" name="purchase"></td>
+					<td><input type="radio" name="purchase"></td>
+					<td><input type="radio" name="purchase"></td>
+				</tr>
+				<tr>
+					<td>Service</td>
+					<td><input type="radio" name="service"></td>
+					<td><input type="radio" name="service"></td>
+					<td><input type="radio" name="service"></td>
+					<td><input type="radio" name="service"></td>
+					<td><input type="radio" name="service"></td>
+				</tr>
+				<tr>
+					<td>Company Overall</td>
+					<td><input type="radio" name="overall"></td>
+					<td><input type="radio" name="overall"></td>
+					<td><input type="radio" name="overall"></td>
+					<td><input type="radio" name="overall"></td>
+					<td><input type="radio" name="overall"></td>
+				</tr>
+			</table>
+
+			<h4 class="check-header">How likely are you to<span class="required">*</span></h4>
+			<table>
+				<tr>
+					<th></th>
+					<th>Very Unlikely</th>
+					<th>Unlikely</th>
+					<th>Neutral</th>
+					<th>Likely</th>
+					<th>Very Likely</th>
+				</tr>
+				<tr>
+					<td>Buy from us again</td>
+					<td><input type="radio" name="purchase"></td>
+					<td><input type="radio" name="purchase"></td>
+					<td><input type="radio" name="purchase"></td>
+					<td><input type="radio" name="purchase"></td>
+					<td><input type="radio" name="purchase"></td>
+				</tr>
+				<tr>
+					<td>Recommend our product to others</td>
+					<td><input type="radio" name="service"></td>
+					<td><input type="radio" name="service"></td>
+					<td><input type="radio" name="service"></td>
+					<td><input type="radio" name="service"></td>
+					<td><input type="radio" name="service"></td>
+				</tr>
+				<tr>
+					<td>Recommend our company to others</td>
+					<td><input type="radio" name="overall"></td>
+					<td><input type="radio" name="overall"></td>
+					<td><input type="radio" name="overall"></td>
+					<td><input type="radio" name="overall"></td>
+					<td><input type="radio" name="overall"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="comments">
+			<h4>Additional comments or suggestions</h4>
+			<textarea></textarea>
+		</div>
+		<div class="submit-btn">
+			<input type="submit" value="Submit">
+		</div>
+      </form>
+    </div>
+  </body>
+</html>

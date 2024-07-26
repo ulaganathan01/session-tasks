@@ -1,0 +1,75 @@
+body{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-bottom: 10px;
+}
+.first-name{
+	margin-right: 15px;
+}
+.name-container{
+	display: flex;
+	margin-bottom: 10px;
+	
+}
+.name-container div input{
+	width: 90%;
+	padding: 8px 5px;
+}
+.email{
+	margin-bottom: 10px;
+}
+.email input{
+	width: 50%;
+	padding: 8px 5px;
+}
+.required{
+	color: red;
+}
+.sub-text{
+	margin: 0;
+	font-size: medium;
+}
+label{
+	font-weight: bold;
+}
+.star {
+	visibility:hidden;
+	font-size:40px;
+	line-height: 30px;
+	cursor:pointer;
+	color: #ffa500;
+}
+.rating-q{
+	font-family: 'Times New Roman', Times, serif;
+}
+.star:before {
+ content: "\2605";
+ visibility:visible;
+}
+.star:checked:before {
+ content: "\2606";
+}
+table, th, td{
+	font-family: 'Times New Roman', Times, serif;	font-weight: normal;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 10px;
+}
+table{
+	width: 100%;
+}
+td:first-child{
+	text-align: left;
+}
+tr:nth-child(even){
+	background-color: lightgray;
+}
+textarea{
+	width: 100%;
+	height: 20vh;
+	margin-bottom: 10px;
+}
+.submit-btn input{
+	padding: 15px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.2rem;
+}
