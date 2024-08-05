@@ -19,7 +19,7 @@ setTimeout(function(){
                                 setTimeout(function(){
                                     messageEle.innerText = 1;
                                     setTimeout(function(){
-                                        messageEle.innerText = "Happy\n Independance\n Day!";
+                                        messageEle.innerText = "Happy\n Independence\n Day!";
                                         messageEle.style.backgroundColor = "orange";
                                     }, 1000)
                                 }, 1000)
