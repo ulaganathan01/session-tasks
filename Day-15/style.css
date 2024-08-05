@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+}
+#message{
+    background-color: dodgerblue;
+    width: 100vw;
+    height: 100vh;
+    font-size: 150px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    #message{
+        font-size: 50px;
+    }
+}
