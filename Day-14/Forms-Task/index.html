@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Forms - Dom Manipulation</h1>
+    <p id="description">Created a form and table element. By giving value to the input elements we need to create the row elements with the value from the input filels. This all could be done after clicking the Add button in a form element. And the input fileds need to be cleared after clicking the button. </p>
+    <div class="form-container">
+      <form id="form" autocomplete="off">
+        <div class="first-name margin-bt form-group">
+          <label for="first-name">First name: </label>
+          <input class="clr-value" type="text" name="first-name" id="first-name" value="Ulaganathan" placeholder="Enter your first name" required/>
+        </div>
+        <div class="last-name margin-bt form-group">
+          <label for="last-name">Last name: </label>
+          <input class="clr-value" type="text" name="last-name" value="Selvaraj" id="last-name" placeholder="Enter your last name" required />
+        </div>
+        <div class="email margin-bt">
+          <label for="email">Email: </label>
+          <input class="clr-value" type="email" name="email" value="ulaganathan@gmail.com" placeholder="Enter your email" id="email" />
+        </div>
+        <div class="address margin-bt form-group">
+          <label for="address">Address: </label>
+          <textarea class="clr-value" type="text" name="address" id="address" placeholder="Enter your address" >123 East Town</textarea>
+        </div>
+        <div class="pincode margin-bt form-group">
+          <label for="pincode">Pincode: </label>
+          <input class="clr-value" type="text" name="pincode" value="123456" id="pincode" placeholder="Enter your pincode" required />
+        </div>
+        <div class="gender-selection margin-bt">
+					<label for="gender">Gender: </label>
+          <input class="gender" type="radio" name="gender" id="male" value="Male" checked><label for="male">Male</label>
+          <input class="gender" type="radio" name="gender" id="female" value="Female"><label for="female">Female</label>
+        </div>
+        <div class="food-choises margin-bt">
+          <label for="food">Food: </label><br>
+          <input type="checkbox" name="south-indian" id="south" value="South Indian" class="food" checked>
+					<label for="south">South Indian</label>
+					<input type="checkbox" name="north-indian" id="north" value="North Indian" class="food">
+					<label for="north">North Indian</label>
+					<input type="checkbox" name="continental" id="continental" value="Continental" class="food" checked>
+					<label for="continental">Continental</label>
+					<input type="checkbox" name="chinese" id="chinese" value="Chinese" class="food">
+					<label for="chinese">Chinese</label>
+					<input type="checkbox" name="curry" id="curry" value="Curry" class="food">
+					<label for="curry">Curry</label>
+        </div>
+        <div class="state margin-bt">
+          <label for="state">State: </label>
+          <input class="clr-value" type="text" name="state" value="Taminadu" id="state" />
+        </div>
+        <div class="country margin-bt">
+          <label for="lname">Country: </label>
+          <input class="clr-value" type="text" name="country" value="India" id="country" />
+        </div>
+				<button class="btn btn-primary" id="submit">Add</button>
+      </form>
+    </div>
+
+    <div class="table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Food</th>
+            <th>State</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+      
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  </body>
+</html>
