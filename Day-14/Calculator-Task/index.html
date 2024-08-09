@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">DOM - Calculator Task</h1>
+    <p id="description">Created a calculator application using DOM</p>
+    <div class="calculator">
+      <div class="display">
+        <input type="text" name="" id="result" value="" onkeydown="key(event)">
+      </div>
+      <div class="buttons">
+        <table class="btn-table">
+          <tr class="row">
+            <td id="reset">
+              <button id="clear" onclick="clrVal()">C</button>
+            </td>
+            <td id="erase">&#8592;</td>
+            <td id="dot" onclick="calculate(event)">.</td>
+            <td id="mod" onclick="calculate(event)">%</td>
+          </tr>
+          <tr class="row">
+            <td id="seven">
+              <button onclick="calculate(event)">7</button>
+            </td>
+            <td id="eight">
+              <button onclick="calculate(event)">8</button>
+            </td>
+            <td id="nine">
+              <button onclick="calculate(event)">9</button>
+            </td>
+            <td id="mul" onclick="calculate(event)">*</td>
+          </tr>
+          <tr class="row">
+            <td id="four">
+              <button onclick="calculate(event)">4</button>
+            </td>
+            <td id="five">
+              <button onclick="calculate(event)">5</button>
+            </td>
+            <td id="six">
+              <button onclick="calculate(event)">6</button>
+            </td>
+            <td id="div" onclick="calculate(event)">/</td>
+          </tr>
+          <tr class="row">
+            <td>
+              <button onclick="calculate(event)" id="1" >1</button>
+            </td>
+            <td>
+              <button onclick="calculate(event)" id="2">2</button>
+            </td>
+            <td>
+              <button onclick="calculate(event)" id="3">3</button>
+            </td>
+            <td>
+              <button id="subtract" onclick="calculate(event)">-</button>
+            </td>
+          </tr>
+          <tr class="row">
+            <td id="zero" onclick="calculate(event)">0</td>
+            <td id="d-zero" onclick="calculate(event)">00</td>
+            <td>
+              <button id="equal" onclick="calculate(event)">=</button>
+            </td>
+            <td>
+              <button id="add" onclick="calculate(event)">+</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  </body>
+</html>
