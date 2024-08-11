@@ -2,6 +2,7 @@ const h1 = document.createElement("h1");
 h1.setAttribute("id", "title");
 const p = document.createElement("p");
 p.setAttribute("id", "description");
+document.body.append(h1, p);
 const divContainer = document.createElement("div");
 divContainer.setAttribute("class", "calculator");
 divContainer.innerHTML = `
