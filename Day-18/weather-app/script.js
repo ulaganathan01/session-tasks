@@ -37,8 +37,8 @@ function getWeather(){
 function displayWeather(res){
     displayPlace.innerHTML = `<span class="text-primary text-center fw-bold">Place:</span> ${res.name}`;
     displayCountry.innerHTML = `<span class="text-primary text-center fw-bold">Country:</span> ${res.sys.country}`;
-    displayLatitude.innerHTML = `<span class="text-primary text-center fw-bold">Latutude:</span> ${res.coord.lat}`;
-    displayLongitude.innerHTML = `<span class="text-primary text-center fw-bold">Latutude:</span> ${res.coord.lon}`;
+    displayLatitude.innerHTML = `<span class="text-primary text-center fw-bold">Latitude:</span> ${res.coord.lat}`;
+    displayLongitude.innerHTML = `<span class="text-primary text-center fw-bold">Longitude:</span> ${res.coord.lon}`;
     displayCondition.innerHTML = `<span class="text-primary text-center fw-bold">Weather Condition:</span> ${res.weather[0].main}`;
     displayDescription.innerHTML = `<span class="text-primary text-center fw-bold">Weather Description: ${res.weather[0].description}`;
     displayTemperature.innerHTML = `<span class="text-primary text-center fw-bold">Temperature:</span> ${res.main.temp}`;
