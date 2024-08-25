@@ -1,0 +1,15 @@
+body{
+    background-color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+.error-display{
+    color: red;
+    font-weight: bold;
+}
+input, button{
+    padding: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
