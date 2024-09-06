@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Defining styles for navigation itemsin header */
+.in-active{
+    color: gray;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+}nav.header-nav{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+}
+.nav-container{
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+.nav-container li{
+    width: 30%;
+}
+.nav-container .cart-container{
+    text-align: right;
+    width: 30%;
+}
+.cart-container button{
+    word-spacing: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+}
+.material-symbols-outlined {
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 1.2rem;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.cart-items-count{
+    background-color: black;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 8px;
+}
+
+/* Styles for main card */
+.main{
+    width: 100%;
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    h1{
+        font-size: 3.5rem;
+        margin: 0;
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: gray;
+        margin: 0;
+    }
+}
+
+/* Styles for card component */
+.card-container{
+    display: flex;
+    flex-direction: row;
+    margin: 10vh 5vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    width: 250px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.product-image{
+    /* width: 100%; */
+    height: 60%;
+    margin-top: 10px;
+    img{
+        height: 100%;
+        object-fit: contain;
+    }
+}
+.cart-button button{
+    padding: 8px 12px;
+    background-color: white;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.cart-button button:hover{
+    background-color: #212529;
+    color: white;
+    transition: background-color 0.3s;
+}
+.cart-button .remove{
+    background-color: lightgray;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+    }
+    .nav-items{
+        flex-direction: column;
+    }
+    .nav-container .cart-container{
+        text-align: left;
+        margin-top: 10px;
+        width: auto;
+    }
+    .nav-container li{
+        width: 100%;
+        line-height: 30px;
+    }
+}
