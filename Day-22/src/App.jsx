@@ -1,5 +1,5 @@
 import './App.css';
-import LandingPage from './components/landingPage';
+import LandingPage from './components/LandingPage';
 import ShowCase from './components/ShowCase';
 import Testimonial from './components/Testimonial';
 import testOne from "./assets/testimonials-1.jpg";
